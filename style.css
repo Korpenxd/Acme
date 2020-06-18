@@ -7,9 +7,9 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Global **/
+/* Global */
 .container {
-  width: 50%;
+  width: 55%;
   margin: auto;
   overflow: hidden;
 }
@@ -23,7 +23,7 @@ ul {
   height: 38px;
   background: #e8491d;
   border: 0;
-  padding: 0 20px;
+  padding: 0 1rem;
   color: #fff;
 }
 
@@ -80,13 +80,13 @@ header a:hover{
   font-weight: bold;
 }
 
-/* Showcase **/
+/* Showcase */
 #showcase {
-  min-height: 400px;
   background: url("images/showcase.jpeg") no-repeat;
   background-size: cover;
   text-align: center;
   color: #fff;
+  display: block;
 }
 
 #showcase h1 {
@@ -99,9 +99,10 @@ header a:hover{
 #showcase p {
   font-size: 20px;
   text-shadow: 0.1em 0.1em 0.2em black;
+
 }
 
-/* Newsletter **/
+/* Newsletter */
 #newsletter {
   padding: 15px;
   color: #fff;
@@ -115,16 +116,15 @@ header a:hover{
 #newsletter form {
   float: right;
   margin-top: 15px;
-  margin-left: 15px;
 }
 
 #newsletter input[type="email"]{
   padding: 4px;
   height: 25px;
-  width: 250px;
+  width: 12rem;
 }
 
-/* Boxes **/
+/* Boxes */
 #boxes {
   margin-top: 20px;
 }
@@ -140,7 +140,7 @@ header a:hover{
   width: 90px;
 }
 
-/* Sidebar **/
+/* Sidebar */
 aside#sidebar {
   float: right;
   width: 30%;
@@ -197,7 +197,7 @@ footer {
   }
 }
 */
-@media(max-width: 900px) {
+@media(max-width: 1205px) {
   header #branding,
   header nav,
   header nav li,
@@ -223,8 +223,25 @@ footer {
     display: block;
     width: 100%;
   }
+  }
 
+  @media (max-width: 600px) {
+    #showcase h1 {
+      font-size: 2.5rem;
+      padding: 1rem;
+    }
 
+    #showcase p {
+      display: none;
+    }
+
+    #newsletter .container {
+      width: 65%;
+    }
+
+    #boxes .box {
+      padding: 0;
+    }
 
 
 
